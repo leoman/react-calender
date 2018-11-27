@@ -25,7 +25,7 @@ class Reminder extends PureComponent {
         const { showReminder } = this.props;
         return (
             <ReminderWrapper showReminder={showReminder}>
-                <input type='text' value={reminder} onChange={this.onChange} />
+                <input type='text' value={reminder} onChange={this.onChange} maxLength={30} />
                 <button onClick={() => this.submit()}>Submit</button>
             </ReminderWrapper>
         )
